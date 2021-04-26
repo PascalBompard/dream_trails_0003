@@ -5,7 +5,7 @@ var zoff = 0.01;
 var flowfield;
 var start_time;
 var current_time;
-var timespan = (2 * 60) * 50;
+var timespan = (2 * 60) * 200;
 var weights;
 var particles = [];
 var p1;
@@ -15,7 +15,7 @@ var maxParticles;
 var particleColour = 30;
 var fr;
 var title = "Dream Trails";
-var code = "0003";
+var code = "0003.1";
 var p;
 let myFont;
 

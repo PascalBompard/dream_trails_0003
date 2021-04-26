@@ -2,7 +2,7 @@ function Particle() {
     this.pos = createVector(random(width), random(height));
     this.vel = createVector(0,0);
     this.acc = createVector(0,0);
-    this.maxspeed = 20;
+    this.maxspeed = 40;
     this.hue = particleColour + random(40);
     this.sat = 0;
     this.brightness = 20;
@@ -51,8 +51,8 @@ function Particle() {
      
         // line(this.pos.x,this.pos.y,this.prevPos.x,this.prevPos.y);
         if(
-            (this.pos.x > this.prevPos.x + 5 || this.pos.x < this.prevPos.x - 1) && 
-            (this.pos.y > this.prevPos.y + 2 || this.pos.y < this.prevPos.y - 10 )
+            (this.pos.x > this.prevPos.x + 2 || this.pos.x < this.prevPos.x - 1) && 
+            (this.pos.y > this.prevPos.y + 1 || this.pos.y < this.prevPos.y - 2 )
             ) {
             point(this.pos.x,this.pos.y);
         }
